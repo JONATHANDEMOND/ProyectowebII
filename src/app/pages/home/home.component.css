@@ -1,0 +1,72 @@
+/* Estilos Generales */
+body {
+    background-color: #121212; /* Fondo oscuro para toda la página */
+    color: #e0e0e0; /* Color de texto claro para contraste */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente moderna y limpia */
+}
+
+/* Navbar Estilos */
+.navbar {
+    background-color: #333; /* Color de fondo oscuro para la navbar */
+    border-bottom: 2px solid #444; /* Borde oscuro en la parte inferior de la navbar */
+}
+
+.navbar-brand, .nav-link {
+    color: #fff; /* Color blanco para los enlaces */
+}
+
+.navbar-brand:hover, .nav-link:hover, .nav-link.active {
+    color: #1e88e5; /* Color azul brillante para hover y activo */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+.navbar-toggler {
+    border-color: #777; /* Color del botón toggler */
+}
+
+.navbar-toggler-icon {
+    background-image: url("../../../assets/images/tecno.jpeg");
+}
+
+/* Estilos para Títulos y Subtítulos */
+.titulo h2, .subtitulo h4 {
+    text-align: center;
+    color: #4caf50; /* Verde claro para títulos */
+}
+
+.titulo h2 {
+    margin-top: 20px;
+    font-size: 2.5em;
+}
+
+.subtitulo h4 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Estilos para la lista de productos */
+.lista-productos {
+    margin: 20px auto;
+    width: 40%;
+}
+
+.tipo {
+    background-color: #424242; /* Fondo para cada tipo de producto */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.tipo img {
+    width: 100%; /* Imágenes ocupan todo el ancho del contenedor .tipo */
+    height: auto;
+    border-bottom: 1px solid #333; /* Borde sutil debajo de la imagen */
+}
+
+.tipo h3 {
+    color: #1e88e5; /* Azul para sub-títulos de cada producto */
+}
+
+.tipo p {
+    color: #ccc
+}

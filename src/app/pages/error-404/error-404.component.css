@@ -1,0 +1,36 @@
+.centro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.boton-regresar {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #ff6700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.boton-regresar:hover {
+    background-color: #ff8000;
+}
+
+.boton-regresar span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.boton-regresar img {
+    vertical-align: middle;
+}
