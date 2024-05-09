@@ -1,6 +1,8 @@
 import { Component, inject } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { Observable } from 'rxjs';
+import { ProductosComponent } from '../productos/productos.component';
+import { ProductosService } from '../../services/productos.service';
 
 @Component({
   selector: 'app-productos-detalle',
@@ -10,14 +12,27 @@ import { Observable } from 'rxjs';
   styleUrl: './productos-detalle.component.css'
 })
 export class ProductosDetalleComponent {
+  constructor(private servicio:ProductosService){}
 producto: any
 id: any
 
 ruta = inject(ActivatedRoute)
 
-mensaje() {
-  alert("Id del Producto: "+this.producto.id)
+
+
+ngOnInit():void{
+  this.ruta.params.subscribe(p=> {
+    this.id =p['idProductos']
+
+    this.servicio.getDatos(this.id).subscribe(d=>{
+      this.producto=d;
+    })
+
+
+  })
 }
+
+
 
 
 

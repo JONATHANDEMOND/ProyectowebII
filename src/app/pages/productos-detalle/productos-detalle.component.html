@@ -1,13 +1,21 @@
 
-<div class="container">
-    <div class="card mx-auto" style="width:300px">
-        <img class="card-img-top" src="{{producto.urlImagen}}" alt="Card image" style="width:100%">
-        <div class="card-body">
-            <h4 class="card-title">{{producto.nombre}}</h4>
-            <p class="card-text">{{producto.precio}} $</p>
-            <p class="card-text">{{producto.categoria}}</p>
-            <button class="btn btn-primary" (click)="mensaje()">Ver</button>
-            <button   class="btn btn-danger" [routerLink]="['/productos',producto.id]">Regresar</button>
-        </div>
+<div class="card mx-auto" style="width: 280px;">
+    <img src="{{producto.urlImagen}}" class="card-img-top" alt="Chicago Skyscrapers"/>
+    <div class="card-body">
+      <h5 class="card-title">{{producto.id}}</h5>
+      <p class="card-text">
+        <label style="color: rgb(238, 12, 50);">Nombre:</label> {{producto.nombre}}</p>
     </div>
-</div>
+    <ul class="list-group list-group-light list-group-small">
+      <li class="list-group-item px-4">
+        <label style="color: blue;">Precio:</label> {{producto.precio}}</li>
+      <li class="list-group-item px-4">
+        <label style="color: blue;">Categoria:</label> {{producto.categoria}}</li>
+      <li class="list-group-item px-4">
+        <label style="color: blue;">Descripcion:</label> {{producto.descripcion}}</li>
+    </ul>
+    <div class="card-body">
+      <button [routerLink]="['/productos']" class="btn btn-success">Regresar</button>
+      
+    </div>
+  </div>
