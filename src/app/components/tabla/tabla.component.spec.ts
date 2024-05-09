@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TablaComponent } from './tabla.component';
+import { RouterLink } from '@angular/router';
 
 describe('TablaComponent', () => {
   let component: TablaComponent;
