@@ -7,12 +7,12 @@ import { Observable } from 'rxjs';
 })
 export class ProductosService {
 
-  constructor(private http: HttpClient) {
-    private API_PRODUCTOS=" http://localhost:3000"
+  constructor(private http: HttpClient) {}
+    private  API_PRODUCTOS="  http://localhost:3000/productos"
 //////LEEER - GET/////////
 getProductos():Observable<any>{
   return this.http.get(this.API_PRODUCTOS)
 }
 
-   }
+   
 }
