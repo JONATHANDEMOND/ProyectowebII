@@ -20,5 +20,9 @@ export class ProductosService {
     return this.http.get(`${this.API_PRODUCTOS}/${id}`)
   }
 
+  deleteProductoID(id:any):Observable<any>{
+return this.http.delete(`${this.API_PRODUCTOS}/${id}`)
+  }
+
 }
 

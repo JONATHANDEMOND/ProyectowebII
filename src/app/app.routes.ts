@@ -6,6 +6,7 @@ import { Error404Component } from './pages/error-404/error-404.component';
 import { ProductosComponent } from './pages/productos/productos.component';
 import { ProductosDetalleComponent } from './pages/productos-detalle/productos-detalle.component';
 import { ContactosComponent } from './pages/contactos/contactos.component';
+import { FormularioComponent } from './components/formulario/formulario.component';
 
 export const routes: Routes = [
 
@@ -13,6 +14,7 @@ export const routes: Routes = [
     { path: 'nosotros', component: NosotrosComponent},
     { path: 'productos', component: ProductosComponent},
     { path: 'contactos', component: ContactosComponent},
+    {path:'formulario', component:FormularioComponent},
     { path: 'productos/:idProductos', component: ProductosDetalleComponent},
     
     

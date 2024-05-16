@@ -25,8 +25,8 @@
             <img src="{{item.urlImagen}}" height="200">
         </td> 
         <td>
-          <button class="btn btn-success">EDITAR</button>
-          <button class="btn btn-danger" >ELIMINAR</button>
+          <button class="btn btn-success"[routerLink]="['/formulario',item.id]">EDITAR</button>
+          <button class="btn btn-danger" (click)="eliminar(item.id)" >ELIMINAR</button>
         </td> 
       </tr>
     }

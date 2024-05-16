@@ -19,4 +19,9 @@ export class TablaComponent {
    })
   }
 
+  eliminar(id:any){
+    this.servicio.deleteProductoID(id).subscribe()
+    window.location.reload()
+  }
+
 }
