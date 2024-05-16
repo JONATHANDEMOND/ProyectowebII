@@ -1,1 +1,33 @@
-<p>formulario works!</p>
+
+<h2>MENU EDITAR</h2>
+
+<form (ngSubmit)="guardar(formulario)" #formulario ='ngForm'>
+    <label>Ingresar ID</label>
+    <input type="text" name="id" [(ngModel)]="id"  class="form-control">
+
+    <label>Ingrese Nombre</label>
+    <input type="text" name="nombre" [(ngModel)]="nombre" class="form-control">
+
+    <label>Ingrese el Precio</label>
+    <input type="number" name="precio" [(ngModel)]="precio" class="form-control">
+    <label>Ingrese la descripcion</label>
+    <input type="number" name="descripcion" [(ngModel)]="descripcion" class="form-control">
+
+    <label for="imagen">Agregar Imagen (URL)</label>
+          <input type="text" id="imagen" name="imagen" [(ngModel)]="urlImagen">
+<label> Seleccione la categoria</label><br>
+  
+    <input class="form-check-input" type="checkbox" name ="laptops" value="laptops" [(ngModel)]="laptops">
+    <label class="form-check-label" for="flexCheckDefault">Laptop </label><br>
+    
+    <input class="form-check-input" type="checkbox" name ="tablets" value="tablets" [(ngModel)]="tablets">
+    <label class="form-check-label" for="flexCheckDefault">Tablets</label><br>
+    <input class="form-check-input" type="checkbox" name ="smartphones" value="smartphones" [(ngModel)]="smartphones">
+    <label class="form-check-label" for="flexCheckDefault">Smart Phones </label><br>
+
+ 
+
+
+    <button type="submit">Guardar</button><br>
+    <button type="button" [routerLink]="['/productos']">REGRESAR</button>
+</form>

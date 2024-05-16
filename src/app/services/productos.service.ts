@@ -24,5 +24,9 @@ export class ProductosService {
 return this.http.delete(`${this.API_PRODUCTOS}/${id}`)
   }
 
+  postProducto(productos:JSON):Observable<any>{
+    return this.http.post(this.API_PRODUCTOS, productos)
+  }
+
 }
 
