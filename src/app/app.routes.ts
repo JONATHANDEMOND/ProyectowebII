@@ -7,10 +7,15 @@ import { ProductosComponent } from './pages/productos/productos.component';
 import { ProductosDetalleComponent } from './pages/productos-detalle/productos-detalle.component';
 import { ContactosComponent } from './pages/contactos/contactos.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
+import { LoginComponent } from './pages/login/login.component';
+import { RegistroComponent } from './pages/registro/registro.component';
+import { loginGuard, registroGuard } from './guards/login.guard';
 
 export const routes: Routes = [
 
     { path: 'home', component:HomeComponent },
+    {path: 'login' ,component:LoginComponent,canActivate:[loginGuard]} ,
+    {path:'registro', component:RegistroComponent, canActivate:[registroGuard]},
     { path: 'nosotros', component: NosotrosComponent},
     { path: 'productos', component: ProductosComponent},
     { path: 'contactos', component: ContactosComponent},

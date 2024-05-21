@@ -32,5 +32,19 @@
       "tablets": true,
       "urlImagen": "https://lavictoria.ec/wp-content/uploads/2023/06/IPAD-AIR-5TA-GEN-64GB-10.9-GRIS-MM9C3LZA-A2588-APPLE-4-jpg.webp"
     }
+  ],
+  "users": [
+    {
+      "email": "admin@yop.com",
+      "password": 12345,
+      "type": "admin",
+      "id": 1
+    },
+    {
+      "email": "jona@yop.com",
+      "password": "$2a$10$d94mEj8eLZ23jx4gKwGoHe/g.xNDwWNdb/EVVKxJ3Z/TcaeYZ/9QG",
+      "type": "admin",
+      "id": 2
+    }
   ]
 }

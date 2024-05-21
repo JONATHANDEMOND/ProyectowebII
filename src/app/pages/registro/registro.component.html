@@ -1,0 +1,25 @@
+<div class="container">
+    <h1>REGISTRO</h1>
+
+    <form (ngSubmit)="registro(formulario)" #formulario = "ngForm">
+        <label for="username" class="form-label">Email:</label>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">{{'📧'}}</span>
+            <input type="text" class="form-control" placeholder="Username" name="email" [(ngModel)]="email">
+        </div>
+
+        <select name="type" [(ngModel)]= "type" class="form-control dark-select">
+            <option value="user">User</option>
+            <option value="admin">Admin</option>
+        </select>
+
+        
+        <label for="pwd" class="form-label">Password:</label>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">{{'🔑'}}</span>
+            <input type="text" class="form-control" placeholder="Password" name="password" [(ngModel)]="password">
+        </div>
+      
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</div>
