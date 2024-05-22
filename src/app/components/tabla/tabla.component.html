@@ -25,14 +25,18 @@
             <img src="{{item.urlImagen}}" height="200">
         </td> 
         <td>
-          
+          <button class="btn btn-success"(click)="agregarCarrito(item)">AGREGAR AL CARRITO</button><br>
           <button class="btn btn-success"[routerLink]="['/formulario']">EDITAR</button>
-          <button class="btn btn-danger" (click)="eliminar(item.id)" >ELIMINAR</button>
+           <button class="btn btn-danger" (click)="eliminar(item.id)" >ELIMINAR</button>
         </td> 
       </tr>
     }
     </tbody>
+
+
   </table><br>
+
+  <button class="btn btn-success"[routerLink]="['/carrito']">CARRITO</button>
   <br>
   <h3>AGREGAR NUEVO PRODUCTO</h3>
     <form (ngSubmit)="guardar(formulario)" #formulario ='ngForm'>

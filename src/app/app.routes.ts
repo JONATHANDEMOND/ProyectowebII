@@ -10,6 +10,7 @@ import { FormularioComponent } from './components/formulario/formulario.componen
 import { LoginComponent } from './pages/login/login.component';
 import { RegistroComponent } from './pages/registro/registro.component';
 import { loginGuard, registroGuard } from './guards/login.guard';
+import { CarritoComComponent } from './pages/carrito-com/carrito-com.component';
 
 export const routes: Routes = [
 
@@ -20,6 +21,7 @@ export const routes: Routes = [
     { path: 'productos', component: ProductosComponent},
     { path: 'contactos', component: ContactosComponent},
     {path:'formulario', component:FormularioComponent},
+    {path:'carrito',component:CarritoComComponent},
     { path: 'productos/:idProductos', component: ProductosDetalleComponent},
     
     

@@ -1,7 +1,8 @@
-import { Component, inject } from '@angular/core';
+import { Component, Inject, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ProductosService } from '../../services/productos.service';
 import { FormsModule } from '@angular/forms';
+import { CartService } from '../../services/cart.service';
 
 @Component({
 
@@ -25,6 +26,7 @@ export class TablaComponent {
   urlImagen:any
   servicio = inject(ProductosService)
   productos: any
+  servicioCar = inject(CartService)
 
   ngOnInit(): void {
    this.servicio.getProductos().subscribe(p=>{
@@ -41,4 +43,8 @@ export class TablaComponent {
     window.location.reload()
   }
 
+  agregarCarrito(data:any){
+    this.servicioCar.postCart(data).subscribe()
+  console.log(data)
+  }
 }

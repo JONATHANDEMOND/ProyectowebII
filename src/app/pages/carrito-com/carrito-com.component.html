@@ -1,0 +1,41 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Descripcion</th>
+        <th scope="col">Precio</th>
+        <th scope="col">Imagenes</th>
+        <th scope="col">ACCIONES</th>
+      
+      </tr>
+    </thead>
+    <tbody>
+        @for (item of productos; track item) {
+      <tr>
+        <th scope="row">{{item.id}}</th>
+        <td>{{item.nombre}}</td>
+        <td>
+          <button [routerLink]="['/productos', item.id]">Detalles</button>
+        </td> 
+        <td>{{item.precio}}</td>  
+        <td>
+            <img src="{{item.urlImagen}}" height="200">
+        </td> 
+        <td>
+          
+          
+          <button class="btn btn-danger" (click)="eliminar(item.id)" >ELIMINAR</button>
+        </td> 
+      </tr>
+    }
+    </tbody>
+  </table><br>
+  <button class="btn btn-success"[routerLink]="['/productos']">REGRESAR</button>
+  <br>
+  <button class="btn btn-danger" (click)="calcularTotales()" >FACTURAR</button>
+  <div>
+    <p>Subtotal: {{ subtotal | currency }}</p>
+    <p>IVA (15%): {{ iva | currency }}</p>
+    <p>Total: {{ total | currency }}</p>
+  </div>
