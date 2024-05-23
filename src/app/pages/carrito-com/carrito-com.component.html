@@ -33,7 +33,8 @@
   </table><br>
   <button class="btn btn-success"[routerLink]="['/productos']">REGRESAR</button>
   <br>
-  <button class="btn btn-danger" (click)="calcularTotales()" >FACTURAR</button>
+  <br>
+  <button class="btn btn-danger" (click)="calcularTotales()" >FACTURAR</button><br><br>
   <div>
     <p>Subtotal: {{ subtotal | currency }}</p>
     <p>IVA (15%): {{ iva | currency }}</p>

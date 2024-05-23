@@ -1,23 +1,72 @@
-.table {
-    width: 100%;
-    margin: 20px 0;
-  }
-  
-  .table img {
-    max-width: 100px;
-    height: auto;
-  }
-  
-  .table th, .table td {
-    text-align: center;
-    vertical-align: middle;
-  }
-  
-  .btn {
-    margin: 5px;
-  }
-  
-  div {
-    margin-top: 20px;
-  }
-  
+/* productos.component.css */
+.tech-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.tech-table th, .tech-table td {
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+.tech-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.tech-row {
+  background-color: #fff;
+}
+
+.tech-row.even {
+  background-color: #f9f9f9;
+}
+
+.product-image {
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.btn {
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.totals {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+
+.totals p {
+  margin: 5px 0;
+}
+/* productos.component.css */
+.subtotal-container {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.subtotal-container p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.subtotal-container p:first-child {
+  font-weight: bold;
+}
