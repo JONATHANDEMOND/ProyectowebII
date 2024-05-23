@@ -1,0 +1,43 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Descripcion</th>
+        <th scope="col">Precio</th>
+      
+        <th scope="col">Imagenes</th>
+        <th scope="col">ACCIONES</th>
+      
+      </tr>
+    </thead>
+    <tbody>
+        @for (item of productos; track item) {
+      <tr>
+        <th scope="row">{{item.id}}</th>
+        <td>{{item.nombre}}</td>
+        <td>
+          <button [routerLink]="['/productos', item.id]">Detalles</button>
+        </td> 
+        <td>{{item.precio}}</td>  
+       
+        <td>
+            <img src="{{item.urlImagen}}" height="200">
+        </td> 
+        <td>
+          <button class="btn btn-primary" (click)="agregarCarrito(item)">AGREGAR AL CARRITO</button><br><br>
+         
+          <br>
+           <button class="btn btn-danger" (click)="eliminar(item.id)" >ELIMINAR</button><br>
+
+        </td> 
+      </tr>
+    }
+    </tbody>
+
+
+  </table><br>
+  <div >
+    <button (click)="cerrar()">CERRAR</button>
+   
+   </div>

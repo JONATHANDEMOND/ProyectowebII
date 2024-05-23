@@ -57,6 +57,24 @@
       "password": "$2a$10$UDyWLSePaDDNWs5X3LBhFunZjPnZXdutjrRRpVI9BVC2FAA01/CUK",
       "type": "admin",
       "id": 3
+    },
+    {
+      "email": "carol@yop.com",
+      "password": "$2a$10$36zHaVIQTHoGbE1fmr3hVuSpV.cS/l14qaRwfH/bgAtDfgvmBVab6",
+      "type": "admin",
+      "id": 4
+    },
+    {
+      "email": "jonsy@yop.com",
+      "password": "$2a$10$kdVJUN0lp6OkzhmHTflzF.IuJJ6J7hUJtypPvXzInxg5pNaD.B9vW",
+      "type": "user",
+      "id": 5
+    },
+    {
+      "email": "diego@yop.com",
+      "password": "$2a$10$dPXNP3VzQzFvKZcm0/gFBOHa74Es6m08zFX.mkcLIrkjwfFtIm9SG",
+      "type": "user",
+      "id": 6
     }
   ],
   "carrito": []

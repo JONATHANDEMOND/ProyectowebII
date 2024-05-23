@@ -1,22 +1,22 @@
 import { CanActivateFn } from '@angular/router';
 
 export const loginGuard: CanActivateFn = (route, state) => {
-  if( localStorage.getItem('user')== 'true'){
+  if( localStorage.getItem('admin')== 'true'){
     return true
   }else{
-    return true;
+    return false;
   }
 }
   export const registroGuard: CanActivateFn = (route, state) => {
-    if( localStorage.getItem('user')== 'true'){
-      return true
+    if( localStorage.getItem('acceso')== 'true'){
+      return false
     }else{
       return true;
     }
 }
 export const nosotrosGuard: CanActivateFn = (route, state) => {
-  if( localStorage.getItem('admin')== 'true'){
-    return true
+  if( localStorage.getItem('user')== 'true'){
+    return true 
   }else{
     return false;
   }
@@ -29,10 +29,10 @@ export const productosGuard: CanActivateFn = (route, state) => {
   }
 }
 export const contactosGuard: CanActivateFn = (route, state) => {
-  if( localStorage.getItem('user')== 'true'){
+  if( localStorage.getItem('admin')== 'true'){
     return true
   }else{
-    return true;
+    return false;
   }
 }
 export const formularioGuard: CanActivateFn = (route, state) => {
@@ -43,11 +43,19 @@ export const formularioGuard: CanActivateFn = (route, state) => {
   }
 }
 export const carritoGuard: CanActivateFn = (route, state) => {
-  if( localStorage.getItem('user')== 'true'){
+  if( localStorage.getItem('acceso')== 'true'){
     return true
   }else{
     return false;
   }
+}
+
+  export const producSinGuard: CanActivateFn = (route, state) => {
+    if( localStorage.getItem('user')== 'true'){
+      return true
+    }else{
+      return false;
+    }
 }
 
 

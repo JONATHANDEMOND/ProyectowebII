@@ -9,17 +9,19 @@ import { ContactosComponent } from './pages/contactos/contactos.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegistroComponent } from './pages/registro/registro.component';
-import { carritoGuard, contactosGuard, formularioGuard, loginGuard, nosotrosGuard, productosGuard, registroGuard } from './guards/login.guard';
+import { carritoGuard, contactosGuard, formularioGuard, loginGuard, nosotrosGuard, producSinGuard, productosGuard, registroGuard } from './guards/login.guard';
 import { CarritoComComponent } from './pages/carrito-com/carrito-com.component';
+import { ProducSinComponent } from './pages/produc-sin/produc-sin.component';
 
 export const routes: Routes = [
 
     { path: 'home', component:HomeComponent },
     {path: 'login' ,component:LoginComponent,canActivate:[loginGuard]} ,
     {path:'registro', component:RegistroComponent, canActivate:[registroGuard]},
-    { path: 'nosotros', component: NosotrosComponent,canActivate:[nosotrosGuard]},
+    { path: 'nosotros', component: NosotrosComponent},
     { path: 'productos', component: ProductosComponent,canActivate:[productosGuard]},
-    { path: 'contactos', component: ContactosComponent,canActivate:[contactosGuard]},
+    {path:'produc-sin',component:ProducSinComponent},
+    { path: 'contactos', component: ContactosComponent},
     {path:'formulario/:idFormulario', component:FormularioComponent,canActivate:[formularioGuard]},
     
     {path:'carrito',component:CarritoComComponent,canActivate:[carritoGuard]},

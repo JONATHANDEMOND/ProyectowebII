@@ -22,7 +22,7 @@ export class LoginComponent {
     
       this.token = u.accessToken
       if(this.token != ''){
-        localStorage.setItem("user", 'true')
+        localStorage.setItem("acceso", 'true')
         console.log(u.user.type)
         
         if(u.user.type == 'admin'){
