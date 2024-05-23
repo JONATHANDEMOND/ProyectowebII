@@ -28,7 +28,7 @@ export class LoginComponent {
         if(u.user.type == 'admin'){
           localStorage.setItem("admin", 'true')
         }
-            window.location.href= 'prestamo'
+            window.location.href= 'productos'
       }
     })
   }

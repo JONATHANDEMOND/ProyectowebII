@@ -28,5 +28,10 @@ return this.http.delete(`${this.API_PRODUCTOS}/${id}`)
     return this.http.post(this.API_PRODUCTOS, productos)
   }
 
+
+  putProducto(producto:any):Observable<any>{
+    return this.http.put(`${this.API_PRODUCTOS}/${producto.id}`, producto)
+  }
 }
+
 

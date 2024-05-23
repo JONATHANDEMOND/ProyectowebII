@@ -20,4 +20,12 @@ postRegistro(usuario:any):Observable<any>{
   return this.http.post(this.API_USERS2, usuario)
 }
 
+
+
+///////////////////////////////
+private API_USERSFIRE ="https://app-aranda-default-rtdb.firebaseio.com/usuarios/1"
+putRegistrof(usaurio:any, id:any): Observable<any>{
+  return this.http.put(this.API_USERSFIRE+id+".json",usaurio)
+}
+
 }

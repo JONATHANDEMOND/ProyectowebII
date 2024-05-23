@@ -9,7 +9,7 @@ import { ContactosComponent } from './pages/contactos/contactos.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegistroComponent } from './pages/registro/registro.component';
-import { loginGuard, registroGuard } from './guards/login.guard';
+import { carritoGuard, contactosGuard, formularioGuard, loginGuard, nosotrosGuard, productosGuard, registroGuard } from './guards/login.guard';
 import { CarritoComComponent } from './pages/carrito-com/carrito-com.component';
 
 export const routes: Routes = [
@@ -17,11 +17,12 @@ export const routes: Routes = [
     { path: 'home', component:HomeComponent },
     {path: 'login' ,component:LoginComponent,canActivate:[loginGuard]} ,
     {path:'registro', component:RegistroComponent, canActivate:[registroGuard]},
-    { path: 'nosotros', component: NosotrosComponent},
-    { path: 'productos', component: ProductosComponent},
-    { path: 'contactos', component: ContactosComponent},
-    {path:'formulario', component:FormularioComponent},
-    {path:'carrito',component:CarritoComComponent},
+    { path: 'nosotros', component: NosotrosComponent,canActivate:[nosotrosGuard]},
+    { path: 'productos', component: ProductosComponent,canActivate:[productosGuard]},
+    { path: 'contactos', component: ContactosComponent,canActivate:[contactosGuard]},
+    {path:'formulario/:idFormulario', component:FormularioComponent,canActivate:[formularioGuard]},
+    
+    {path:'carrito',component:CarritoComComponent,canActivate:[carritoGuard]},
     { path: 'productos/:idProductos', component: ProductosDetalleComponent},
     
     

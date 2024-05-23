@@ -11,10 +11,8 @@
     {
       "id": "3",
       "nombre": "MacBook Pro 14",
-      "des": "Potente y portátil, con el nuevo chip M1 Pro de Apple.",
       "precio": 1999,
-      "laptops": true,
-      "urlImagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY5Pai7ZvzP0ZlgcTQ9P6GKeB4YveTq0UgaSh7yHxkOw&s"
+      "urlImagen": "https://images.pexels.com/photos/1181275/pexels-photo-1181275.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
       "id": "4",
@@ -31,6 +29,14 @@
       "precio": 599,
       "tablets": true,
       "urlImagen": "https://lavictoria.ec/wp-content/uploads/2023/06/IPAD-AIR-5TA-GEN-64GB-10.9-GRIS-MM9C3LZA-A2588-APPLE-4-jpg.webp"
+    },
+    {
+      "id": "6",
+      "nombre": "Macbook Pro",
+      "precio": 2500,
+      "descripcion": "Usada para diseño grafico",
+      "urlImagen": "https://images.pexels.com/photos/205421/pexels-photo-205421.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "laptops": true
     }
   ],
   "users": [
@@ -45,40 +51,13 @@
       "password": "$2a$10$d94mEj8eLZ23jx4gKwGoHe/g.xNDwWNdb/EVVKxJ3Z/TcaeYZ/9QG",
       "type": "admin",
       "id": 2
+    },
+    {
+      "email": "p@yop.com",
+      "password": "$2a$10$UDyWLSePaDDNWs5X3LBhFunZjPnZXdutjrRRpVI9BVC2FAA01/CUK",
+      "type": "admin",
+      "id": 3
     }
   ],
-  "carrito": [
-    {
-      "id": "2",
-      "nombre": "Samsung Galaxy S21",
-      "des": "La experiencia premium de Android en un smartphone de Samsung.",
-      "precio": 999,
-      "smartphones": true,
-      "urlImagen": "https://catalogo.claro.com.ec/uploads/imgs/productos/samsung-galaxy-s21-ultra/negro/zoom/03-samsung-galaxy-s21-ultra-negro-back.png"
-    },
-    {
-      "id": "3",
-      "nombre": "MacBook Pro 14",
-      "des": "Potente y portátil, con el nuevo chip M1 Pro de Apple.",
-      "precio": 1999,
-      "laptops": true,
-      "urlImagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY5Pai7ZvzP0ZlgcTQ9P6GKeB4YveTq0UgaSh7yHxkOw&s"
-    },
-    {
-      "id": "4",
-      "nombre": "Dell XPS 13",
-      "des": "Ultra delgada y ligera, perfecta para profesionales.",
-      "precio": 1200,
-      "laptops": true,
-      "urlImagen": "https://www.ubuy.ec/productimg/?image=aHR0cHM6Ly9pNS53YWxtYXJ0aW1hZ2VzLmNvbS9zZW8vRGVsbC1YUFMtMTMtUGx1cy0xMy00LVRvdWNoc2NyZWVuLU5vdGVib29rLUZ1bGwtSEQtMTkyMC14LTEyMDAtSW50ZWwtQ29yZS1pNy0xMnRoLUdlbi1pNy0xMjYwUC1Eb2RlY2EtY29yZS0xMi1Db3JlLTE2LUdCLVRvdGFsLVJBTS01MTItU1NELVBsYXRpbnVtXzgxMjdhMThkLTZhMWQtNDQ1OS1hOWQ2LTA1YTc3MzhjOTg5NC44NzgxZGFjY2I1MmM2YWJlM2Y1ODY5ZThmMjRkMDNlOS5qcGVn.jpg"
-    },
-    {
-      "id": "5",
-      "nombre": "iPad Air 5",
-      "des": "Potente, colorido y maravilloso. El iPad más versátil de Apple.",
-      "precio": 599,
-      "tablets": true,
-      "urlImagen": "https://lavictoria.ec/wp-content/uploads/2023/06/IPAD-AIR-5TA-GEN-64GB-10.9-GRIS-MM9C3LZA-A2588-APPLE-4-jpg.webp"
-    }
-  ]
+  "carrito": []
 }

@@ -3,6 +3,7 @@ import { RouterLink } from '@angular/router';
 import { ProductosService } from '../../services/productos.service';
 import { FormsModule } from '@angular/forms';
 import { CartService } from '../../services/cart.service';
+import { log } from 'console';
 
 @Component({
 
@@ -46,5 +47,11 @@ export class TablaComponent {
   agregarCarrito(data:any){
     this.servicioCar.postCart(data).subscribe()
   console.log(data)
+  }
+
+  cerrar(){
+    localStorage.removeItem('acceso')
+   
+    window.location.href= 'home'
   }
 }

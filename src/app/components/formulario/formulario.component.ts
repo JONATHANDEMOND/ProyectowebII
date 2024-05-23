@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ProductosService } from '../../services/productos.service';
-import { RouterLink } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-formulario',
@@ -21,13 +21,33 @@ export class FormularioComponent {
   tablets:any;
   laptops: any;
   smartphones:any
+productos:any
 
 servicio= inject(ProductosService)
 
+ruta = inject(ActivatedRoute)
 guardar(datos:any){
-  this.servicio.postProducto(datos.value).subscribe()
+  this.servicio.putProducto(datos.value).subscribe()
   window.location.reload()
 }
+
+ngOnInit(){
+  this.ruta.params.subscribe(r=>{
+    this.servicio.getDatos(r['idFormulario']).subscribe(p=>{
+      this.productos=p
+      this.precio=p.precio,
+      this.id=p.id,
+      this.descripcion=p.des,
+      this.urlImagen=p.urlImagen,
+      this.nombre=p.nombre
+    
+
+    } )
+  })
+ 
+
+} 
+
 
 
 }
