@@ -1,14 +1,6 @@
 {
   "productos": [
     {
-      "id": "2",
-      "nombre": "Samsung Galaxy S21",
-      "des": "La experiencia premium de Android en un smartphone de Samsung.",
-      "precio": 999,
-      "smartphones": true,
-      "urlImagen": "https://catalogo.claro.com.ec/uploads/imgs/productos/samsung-galaxy-s21-ultra/negro/zoom/03-samsung-galaxy-s21-ultra-negro-back.png"
-    },
-    {
       "id": "3",
       "nombre": "MacBook Pro 14",
       "precio": 1999,
@@ -87,6 +79,60 @@
       "password": "$2a$10$Ij1QDHTFOqG2LHRFDTFbBOTf8QdaX8XmRz0lNCcwTgiw3Ojc.eRQ2",
       "type": "user",
       "id": 8
+    },
+    {
+      "email": "alex@yop.com",
+      "password": "$2a$10$Tk2YZ9Ti2GUclJ2DtvZt.OUv9/eZEzslv9G3YQ9UaEAfWuy8aJBW6",
+      "type": "user",
+      "id": 9
+    },
+    {
+      "email": "mariajose@yop.com",
+      "password": "$2a$10$wTi0qj6JewAuTaTzY8S5feklpJ6MWTZSWK.H7D1D5421AT1G92V8.",
+      "type": "user",
+      "id": 10
+    },
+    {
+      "email": "fran@yop.com",
+      "password": "$2a$10$3E3SM4eJOrpneQcqOnw6zeAHuVgVZaj3lwEYY1.XBtXmJ06GgdAii",
+      "type": "admin",
+      "id": 11
+    },
+    {
+      "email": "luchos@yop.com",
+      "password": "$2a$10$3g15LwtctHbBf.ik1yU5oupy3.oS7mPZUuCtPl0dHC3u99cIoN08a",
+      "type": "user",
+      "id": 12
+    },
+    {
+      "email": "jo_u123@outlook.es",
+      "password": "$2a$10$D9oA.i5Gew5e0LL9T.XcvOTSo0wQ.cGTTeFqOficlns0FgOmNqm9O",
+      "type": "admin",
+      "id": 13
+    },
+    {
+      "email": "user@yop.com",
+      "password": "$2a$10$6enE2ZPuYHJGoJk2VFZ8Fuv4j0tVd.UjIQ.CpRZ/ZxtXT37.086BC",
+      "type": "user",
+      "id": 14
+    },
+    {
+      "email": "arturo@yop.com",
+      "password": "$2a$10$d.8xS5gGRWhwin3zLiatouiZvT3/LCta3q90gVm58hgZZ.FSOAcqi",
+      "type": "user",
+      "id": 15
+    },
+    {
+      "email": "ol@yop.com",
+      "password": "$2a$10$.wMMnvxwZi.wSRhMza.5ReI4jjkdZk7/HWjmH9F6YroPLihxMoGfa",
+      "type": "user",
+      "id": 16
+    },
+    {
+      "email": "dalila@yop.com",
+      "password": "$2a$10$zcMfZzuH7ONuJsC3ooSc1..RMHuI2SzscdMJNBXsL/GYBw9vgI5H6",
+      "type": "user",
+      "id": 17
     }
   ],
   "carrito": [
@@ -97,28 +143,6 @@
       "precio": 999,
       "smartphones": true,
       "urlImagen": "https://catalogo.claro.com.ec/uploads/imgs/productos/samsung-galaxy-s21-ultra/negro/zoom/03-samsung-galaxy-s21-ultra-negro-back.png"
-    },
-    {
-      "id": "3",
-      "nombre": "MacBook Pro 14",
-      "precio": 1999,
-      "urlImagen": "https://images.pexels.com/photos/1181275/pexels-photo-1181275.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    },
-    {
-      "id": "4",
-      "nombre": "Dell XPS 13",
-      "des": "Ultra delgada y ligera, perfecta para profesionales.",
-      "precio": 1200,
-      "laptops": true,
-      "urlImagen": "https://www.ubuy.ec/productimg/?image=aHR0cHM6Ly9pNS53YWxtYXJ0aW1hZ2VzLmNvbS9zZW8vRGVsbC1YUFMtMTMtUGx1cy0xMy00LVRvdWNoc2NyZWVuLU5vdGVib29rLUZ1bGwtSEQtMTkyMC14LTEyMDAtSW50ZWwtQ29yZS1pNy0xMnRoLUdlbi1pNy0xMjYwUC1Eb2RlY2EtY29yZS0xMi1Db3JlLTE2LUdCLVRvdGFsLVJBTS01MTItU1NELVBsYXRpbnVtXzgxMjdhMThkLTZhMWQtNDQ1OS1hOWQ2LTA1YTc3MzhjOTg5NC44NzgxZGFjY2I1MmM2YWJlM2Y1ODY5ZThmMjRkMDNlOS5qcGVn.jpg"
-    },
-    {
-      "id": "5",
-      "nombre": "iPad Air 5",
-      "des": "Potente, colorido y maravilloso. El iPad más versátil de Apple.",
-      "precio": 599,
-      "tablets": true,
-      "urlImagen": "https://lavictoria.ec/wp-content/uploads/2023/06/IPAD-AIR-5TA-GEN-64GB-10.9-GRIS-MM9C3LZA-A2588-APPLE-4-jpg.webp"
     }
   ]
 }

@@ -28,7 +28,10 @@ export class LoginComponent {
         if(u.user.type == 'admin'){
           localStorage.setItem("admin", 'true')
         }
-            window.location.href= 'productos'
+        if(u.user.type == 'user'){
+          localStorage.setItem("user", 'true')
+        }
+            window.location.href= 'produc-sin'
       }
     })
   }

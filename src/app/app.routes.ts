@@ -9,7 +9,7 @@ import { ContactosComponent } from './pages/contactos/contactos.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegistroComponent } from './pages/registro/registro.component';
-import { carritoGuard, contactosGuard, formularioGuard, loginGuard, nosotrosGuard, producSinGuard, productosGuard, registroGuard } from './guards/login.guard';
+import { carritoGuard,  formularioGuard, loginGuard,   productosGuard, registroGuard } from './guards/login.guard';
 import { CarritoComComponent } from './pages/carrito-com/carrito-com.component';
 import { ProducSinComponent } from './pages/produc-sin/produc-sin.component';
 

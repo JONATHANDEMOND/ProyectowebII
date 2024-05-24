@@ -46,7 +46,8 @@ export class ProducSinComponent {
 
   cerrar(){
     localStorage.removeItem('acceso')
-   
+    localStorage.removeItem('admin')
+    localStorage.removeItem('user')
     window.location.href= 'home'
   }
 
